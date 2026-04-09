@@ -1,0 +1,70 @@
+<!DOCTYPE html><html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Cloud Game PRO</title><style>
+body{margin:0;background:#000;color:#fff;font-family:Arial;display:flex;justify-content:center;align-items:center;height:100vh}
+.box{background:#111;padding:20px;border-radius:12px;text-align:center;width:90%;max-width:400px;max-height:90vh;overflow:auto}
+input{padding:10px;width:90%;margin:10px 0;border:none;border-radius:8px}
+button{padding:10px 15px;border:none;border-radius:8px;background:#0f0;color:#000;font-weight:bold;cursor:pointer}
+.link{display:block;background:#111;padding:10px;margin:6px 0;border-radius:8px;color:#0f0;text-decoration:none}
+</style></head><body oncontextmenu="return false"><div class="box" id="login">
+  <h2>🔐 Login Akses</h2>
+  <input type="text" id="user" placeholder="Username">
+  <input type="password" id="pass" placeholder="Password">
+  <br>
+  <button onclick="login()">Masuk</button>
+</div><div class="box" id="panel" style="display:none">
+  <h2>🎮Cloud Game By Jack🎮</h2>  <h3>🔥🔥🔥🔥🔥</h3>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.xcompute.synos">Cloud Synos</a>
+  <a class="link" href="https://www.mediafire.com/file/a9kanupqfky5il4/Cato_cloud_game_By_Jack.apk/file">Cato</a>
+  <a class="link" href="https://www.mediafire.com/file/2u1rjw40wve4fsb/Cloud_Magic_New_Update_By_jack.apk/file">Magic Core</a>
+  <a class="link" href="https://www.mediafire.com/file/gk8kk5fnujo9lrc/STARPARKS_UNLIMITED_TIME_V5_By_jack.apk/file">Starpaks</a>
+  <a class="link" href="https://www.mediafire.com/file/3d1xugkbamolal0/Wandering_cloud_Baru_Rilis_Full_Game_PS_5_by_jack_.apk/file">Wandering</a>
+  <a class="link" href="https://www.mediafire.com/file/gfg84aya5eifmsh/Cloud_hyfun_By_Jack.xapk/file">Hyfun</a>
+  <a class="link" href="https://www.mediafire.com/file/smhr30z9iw55xza/Jimi_cloud_by_jack.apk/file">Jimi</a>
+  <a class="link" href="https://www.mediafire.com/file/x9q1ripox8b146h/Cloud_3A_By_Jack.apk/file">3A</a>
+  <a class="link" href="https://www.mediafire.com/file/oh50pejgjyunfwe/Quick_trip_by_jack.apk/file">Quick Trip</a>
+  <a class="link" href="https://www.mediafire.com/file/wrgeb2agvxq16jn/Id_China_by_jack.7z/file">ID China</a>
+  <a class="link" href="https://www.mediafire.com/file/4b18m6jzcb4lt8x/UpGame_by_jack.apk/file">UpGame</a>
+  <a class="link" href="https://www.mediafire.com/file/e427vdclo1ku6zq/3839_by_jack.apk/file">3839</a>
+  <a class="link" href="https://www.mediafire.com/file/vlox02yjwxyq8zd/Whale_cloud_game_by_jack.apk/file">Whale</a>  <h3>📲 Playstore</h3>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.nianwei.cloudphone">Cloud Moon</a>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.ld.cph.gl">Cloud Phone</a>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.raccoongame.gamestore">Racoon</a>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.joyark.cloudgames.community">Joyark</a>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.chikii.game">Chiki</a>  <h3>🌐 VPN</h3>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.shadowshark.quickfox">Quick Fox</a>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.golink.tun">Golink</a>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.huabo.flashback.android">Flashback</a>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.linkcn.lphone">LinkCN</a>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.hicn.turbo">Hicn</a>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.flyshuttle.quick">Bilin</a>
+  <a class="link" href="https://www.mediafire.com/file/cxsiezmlkorvgdx/Vpn_bilin_by_jack.apk/file">Bilin Unlimited</a>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.flixcn.accelerator">FlixCN</a>
+  <a class="link" href="https://play.google.com/store/apps/details?id=com.fobwifi.normal">Transocks</a></div><script>
+const USER="admin ganteng😖";
+const PASS="109040.";
+
+function login(){
+let u=document.getElementById('user').value;
+let p=document.getElementById('pass').value;
+if(u===USER && p===PASS){
+document.getElementById('login').style.display='none';
+document.getElementById('panel').style.display='block';
+}else{
+document.body.innerHTML="<h1 style='color:red;text-align:center;margin-top:20%'>AKSES DITOLAK</h1>";
+}
+}
+
+window.addEventListener('keydown',function(e){
+if(e.key==='F12') e.preventDefault();
+if(e.ctrlKey&&e.shiftKey&&['I','J','C'].includes(e.key)) e.preventDefault();
+if(e.ctrlKey&&e.key==='U') e.preventDefault();
+});
+
+window.onblur=function(){
+document.body.innerHTML="<h1 style='color:white;text-align:center;margin-top:20%'>TERKUNCI</h1>";
+}
+</script></body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html><html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Secure Video Player</title><style>
+body {
+  margin:0;
+  background:#000;
+  color:#fff;
+  font-family:Arial;
+  display:flex;
+  justify-content:center;
+  align-items:center;
+  height:100vh;
+}
+
+.container {
+  text-align:center;
+}
+
+iframe {
+  width:90vw;
+  max-width:800px;
+  height:450px;
+  border:none;
+  border-radius:10px;
+}
+
+h1 {
+  margin-bottom:15px;
+  font-size:20px;
+}
+
+.note {
+  margin-top:10px;
+  font-size:12px;
+  opacity:0.6;
+}
+</style></head><body oncontextmenu="return false"><div class="container">
+  <h1>🔥tutor fix all bug by jack🔥</h1>  <iframe id="player" src="https://streamable.com/e/o534bj?autoplay=1&muted=1" allow="autoplay; fullscreen" allowfullscreen></iframe>  <div class="note">Akses terbatas</div>
+</div><script>
+// blok klik kanan
+window.addEventListener('contextmenu', e => e.preventDefault());
+
+// blok inspect sederhana
+window.addEventListener('keydown', function(e){
+  if(e.key === 'F12') e.preventDefault();
+  if(e.ctrlKey && e.shiftKey && ['I','J','C'].includes(e.key)) e.preventDefault();
+  if(e.ctrlKey && e.key === 'U') e.preventDefault();
+});
+
+// blur kalau pindah tab
+window.addEventListener('blur', ()=>{
+  document.body.innerHTML = '<h1 style="color:white;text-align:center;margin-top:20%">Akses ditutup</h1>';
+});
+</script></body>
+</html>
